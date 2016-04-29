@@ -1,4 +1,4 @@
-//
+//Danny Voltz
 //  ViewController.swift
 //  Reaction Time
 //
