@@ -58,6 +58,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8x6-Zw-Bd5" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="koG-pT-pOW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -69,7 +70,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bks-Mf-5Xf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="90" y="-555"/>
+            <point key="canvasLocation" x="405" y="349"/>
         </scene>
     </scenes>
 </document>
