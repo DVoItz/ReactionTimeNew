@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8x6-Zw-Bd5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -7,17 +7,6 @@
         <capability name="Unknown constraint types" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Reaction_Time" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="5SJ-Vq-vDa"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1252" y="349"/>
-        </scene>
         <!--Timer View Controller-->
         <scene sceneID="r1n-eo-1Us">
             <objects>
@@ -64,7 +53,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bh6-p8-iwE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2069" y="349"/>
+            <point key="canvasLocation" x="2881" y="349"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="FLb-xU-jX5">
@@ -78,36 +67,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="1Bw-P3-teY">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="1Bw-P3-teY">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="1Bw-P3-teY" secondAttribute="trailing" constant="-20" id="2AS-8U-ZBg"/>
+                            <constraint firstItem="iOk-RF-9cj" firstAttribute="top" secondItem="1Bw-P3-teY" secondAttribute="bottom" id="74g-JU-HHW"/>
+                            <constraint firstItem="1Bw-P3-teY" firstAttribute="top" secondItem="mFn-Ji-NC9" secondAttribute="topMargin" id="EpQ-MM-9tX"/>
+                            <constraint firstItem="1Bw-P3-teY" firstAttribute="leading" secondItem="mFn-Ji-NC9" secondAttribute="leadingMargin" constant="-20" id="huh-kK-z16"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mwu-rd-bul" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2931" y="349"/>
+            <point key="canvasLocation" x="3743" y="349"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="e0w-4Z-6EW">
+            <objects>
+                <viewController id="7ao-1b-dNG" customClass="ViewController" customModule="Reaction_Time" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kFB-b7-5OE"/>
+                        <viewControllerLayoutGuide type="bottom" id="DvZ-lv-WBx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DYk-dS-403">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="qJf-RE-W5I">
+                                <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DvZ-lv-WBx" firstAttribute="top" secondItem="qJf-RE-W5I" secondAttribute="bottom" id="FoJ-Bn-V4Q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qJf-RE-W5I" secondAttribute="trailing" constant="-20" id="Htf-US-e4a"/>
+                            <constraint firstItem="qJf-RE-W5I" firstAttribute="top" secondItem="kFB-b7-5OE" secondAttribute="bottom" id="MZ6-Wd-gJk"/>
+                            <constraint firstItem="qJf-RE-W5I" firstAttribute="leading" secondItem="DYk-dS-403" secondAttribute="leadingMargin" constant="-20" id="naX-O1-mf8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3U6-3t-14P"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WlA-Rn-RLi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2015" y="349"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="vPo-Xf-PAR">
+        <scene sceneID="gHA-ZB-24O">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8x6-Zw-Bd5" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FBQ-A3-qwv" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="koG-pT-pOW">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KBX-vE-BTj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="J5F-SK-sZ9"/>
+                        <segue destination="7ao-1b-dNG" kind="relationship" relationship="rootViewController" id="qO5-zH-wNJ"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bks-Mf-5Xf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yZx-f3-qVx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="405" y="349"/>
+            <point key="canvasLocation" x="1305" y="137"/>
         </scene>
     </scenes>
     <resources>
