@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E70FC77D1CD7A00B00A7BA8B /* timerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FC77C1CD7A00B00A7BA8B /* timerViewController.swift */; };
 		E7BDF5D61CD3A681006C9956 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BDF5D51CD3A681006C9956 /* AppDelegate.swift */; };
 		E7BDF5D81CD3A681006C9956 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BDF5D71CD3A681006C9956 /* ViewController.swift */; };
 		E7BDF5DB1CD3A681006C9956 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7BDF5D91CD3A681006C9956 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E70FC77C1CD7A00B00A7BA8B /* timerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = timerViewController.swift; sourceTree = "<group>"; };
 		E7BDF5D21CD3A681006C9956 /* Reaction Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reaction Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7BDF5D51CD3A681006C9956 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7BDF5D71CD3A681006C9956 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				E7BDF5D51CD3A681006C9956 /* AppDelegate.swift */,
 				E7BDF5D71CD3A681006C9956 /* ViewController.swift */,
 				E7BDF5D91CD3A681006C9956 /* Main.storyboard */,
+				E70FC77C1CD7A00B00A7BA8B /* timerViewController.swift */,
 				E7BDF5DC1CD3A681006C9956 /* Assets.xcassets */,
 				E7BDF5DE1CD3A681006C9956 /* LaunchScreen.storyboard */,
 				E7BDF5E11CD3A681006C9956 /* Info.plist */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E70FC77D1CD7A00B00A7BA8B /* timerViewController.swift in Sources */,
 				E7BDF5D81CD3A681006C9956 /* ViewController.swift in Sources */,
 				E7BDF5D61CD3A681006C9956 /* AppDelegate.swift in Sources */,
 			);
@@ -487,6 +491,7 @@
 				E7BDF5FC1CD3A681006C9956 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7BDF5FD1CD3A681006C9956 /* Build configuration list for PBXNativeTarget "Reaction TimeTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +500,7 @@
 				E7BDF5FF1CD3A681006C9956 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7BDF6001CD3A681006C9956 /* Build configuration list for PBXNativeTarget "Reaction TimeUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +509,7 @@
 				E7BDF6021CD3A681006C9956 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
