@@ -13,19 +13,19 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        var startTime: NSTimeInterval
+        //var startTime: NSTimeInterval
         
-        startTime = NSDate.timeIntervalSinceReferenceDate()
-        NSTimer.scheduledTimerWithTimeInterval(0.02, target: self, selector: Selector("advanceTimer:"), userInfo: nil, repeats: true)
+       // startTime = NSDate.timeIntervalSinceReferenceDate()
+        //NSTimer.scheduledTimerWithTimeInterval(0.02, target: self, selector: Selector("advanceTimer:"), userInfo: nil, repeats: true)
         
         
-        func advanceTimer(timer: NSTimer) {
-            self.time += 0.001;
-            let milliseconds = self.time * 100;
-            let remaingMilliseconds = Int((milliseconds % 1000) / 10);
-            let seconds = Int((milliseconds / 1000) % 60)
-            print(self.time)
-            self.time = NSDate.timeIntervalSinceReferenceDate() - startTime
+        //func advanceTimer(timer: NSTimer) {
+            //self.time += 0.001;
+            //let milliseconds = self.time * 100;
+            //let remaingMilliseconds = Int((milliseconds % 1000) / 10);
+            //let seconds = Int((milliseconds / 1000) % 60)
+            //print(self.time)
+            //self.time = NSDate.timeIntervalSinceReferenceDate() - startTime
 
 
         }
@@ -33,5 +33,5 @@ class ViewController: UIViewController {
     
     
     
-}
+//}
 

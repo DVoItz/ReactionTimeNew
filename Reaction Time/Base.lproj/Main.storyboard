@@ -18,10 +18,10 @@
             </objects>
             <point key="canvasLocation" x="1252" y="349"/>
         </scene>
-        <!--View Controller-->
+        <!--Timer View Controller-->
         <scene sceneID="r1n-eo-1Us">
             <objects>
-                <viewController id="ciq-yG-dY8" sceneMemberID="viewController">
+                <viewController id="ciq-yG-dY8" customClass="timerViewController" customModule="Reaction_Time" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XcH-LG-bum"/>
                         <viewControllerLayoutGuide type="bottom" id="IOK-lf-TGE"/>
@@ -45,6 +45,16 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ld4-4P-pLM">
                                 <rect key="frame" x="482" y="448" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="stop:" destination="ciq-yG-dY8" eventType="touchUpInside" id="7rw-GM-Tq7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zx-Ei-vcQ">
+                                <rect key="frame" x="235" y="396" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="start:" destination="ciq-yG-dY8" eventType="touchUpInside" id="Ves-3A-0ri"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -54,6 +64,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="displayTimer" destination="WAt-xl-wps" id="R0c-iZ-ncw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bh6-p8-iwE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
