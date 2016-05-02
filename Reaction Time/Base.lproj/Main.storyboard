@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,15 +18,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0m-UW-Um0">
-                                <rect key="frame" x="319" y="497" width="131" height="30"/>
-                                <state key="normal" title="Start Reaction Test"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="qlK-cO-5oG">
+                                <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T0m-UW-Um0">
+                                <rect key="frame" x="319" y="300" width="285" height="217"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Start Reaction Test">
+                                            <attributes>
+                                                <font key="NSFont" size="25" name="HelveticaNeue"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
                                 <connections>
                                     <segue destination="ciq-yG-dY8" kind="presentation" id="Bcs-aM-Ys7"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qlK-cO-5oG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="2j1-xb-FMm"/>
+                            <constraint firstItem="qlK-cO-5oG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7pb-Xi-Mlx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qlK-cO-5oG" secondAttribute="bottom" id="Mtt-bW-oeP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qlK-cO-5oG" secondAttribute="trailing" constant="-20" id="bDI-5B-nhT"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5SJ-Vq-vDa"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
@@ -46,12 +64,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="Hp2-Ob-cwv">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXr-h1-SkG">
-                                <rect key="frame" x="345" y="497" width="78" height="30"/>
+                                <rect key="frame" x="345" y="486" width="78" height="30"/>
                                 <state key="normal" title="Start Game"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hp2-Ob-cwv" firstAttribute="leading" secondItem="Jbi-qr-Ueu" secondAttribute="leadingMargin" constant="-20" id="12g-f5-brs"/>
+                            <constraint firstItem="IOK-lf-TGE" firstAttribute="top" secondItem="Hp2-Ob-cwv" secondAttribute="bottom" id="MS2-2C-oeg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hp2-Ob-cwv" secondAttribute="trailing" constant="-20" id="Mng-b2-wcK"/>
+                            <constraint firstItem="Hp2-Ob-cwv" firstAttribute="top" secondItem="Jbi-qr-Ueu" secondAttribute="topMargin" id="g71-Dq-Peo"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
@@ -79,4 +106,7 @@
             <point key="canvasLocation" x="405" y="349"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background1" width="1280" height="1024"/>
+    </resources>
 </document>
