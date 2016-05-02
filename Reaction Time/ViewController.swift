@@ -10,7 +10,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    //var time: NSTimeInterval = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //var startTime: NSTimeInterval
