@@ -83,18 +83,15 @@
                                 <color key="textColor" red="1" green="0.003010659913" blue="0.27360889510000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YOU PASSED!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGD-BD-Vcf">
-                                <rect key="frame" x="328" y="118" width="113" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YOU PASSED!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGD-BD-Vcf">
+                                <rect key="frame" x="271" y="81" width="253" height="98"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <color key="textColor" red="0.21872892305481351" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YOU FAILED!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUk-zF-EXj">
-                                <rect key="frame" x="328" y="150" width="113" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.003010659913" blue="0.27360889510000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pass(Better)" translatesAutoresizingMaskIntoConstraints="NO" id="kXM-Mv-Aam">
+                                <rect key="frame" x="271" y="180" width="274" height="270"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -126,9 +123,10 @@
                                 <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Isv-3c-x1c">
-                                <rect key="frame" x="319" y="488" width="131" height="30"/>
+                                <rect key="frame" x="159" y="272" width="451" height="198"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <state key="normal" title="Start Reaction Test">
-                                    <color key="titleColor" red="1" green="0.0030106599126097366" blue="0.2736088950562322" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.16736199433216703" blue="0.31362291195928693" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                 </state>
                                 <connections>
@@ -166,5 +164,6 @@
     </scenes>
     <resources>
         <image name="background1" width="1280" height="1024"/>
+        <image name="pass(Better)" width="204" height="204"/>
     </resources>
 </document>
