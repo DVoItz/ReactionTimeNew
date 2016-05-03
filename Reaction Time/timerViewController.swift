@@ -41,9 +41,9 @@ class timerViewController: UIViewController {
         
         
         let minutes1 = UInt8(elapsedTime / 60.0)
-        elapsedTime -= (NSTimeInterval(minutes) * 60)
+        elapsedTime -= (NSTimeInterval(minutes1) * 60)
         let seconds1 = UInt8(elapsedTime)
-        elapsedTime -= NSTimeInterval(seconds)
+        elapsedTime -= NSTimeInterval(seconds1)
         let milli1 = UInt8(elapsedTime * 100)
         
         
