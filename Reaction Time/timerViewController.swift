@@ -12,13 +12,11 @@ class timerViewController: UIViewController {
     
     var go = NSTimeInterval()
     var timer = NSTimer()
-
-
+    
+    
     @IBOutlet weak var displayTimer: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
     }
     
     @IBAction func stop(sender: UIButton) {
@@ -27,7 +25,7 @@ class timerViewController: UIViewController {
     
     
     @IBAction func start(sender: UIButton) {
-
+        
         if (!timer.valid) {
             let test:Selector = "updateTime"
             timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: test, userInfo: nil, repeats: true)
@@ -53,6 +51,6 @@ class timerViewController: UIViewController {
         displayTimer!.text = "\(minutes2):\(seconds2):\(milli2)"
         
     }
-
+    
 }
 
