@@ -28,9 +28,11 @@ class timerViewController: UIViewController {
     
     @IBAction func start(sender: UIButton) {
         
-        let firstSelector : Selector = "updateTimer"
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: firstSelector, userInfo: nil, repeats: true)
-        startTime = NSDate.timeIntervalSinceReferenceDate()
+        if (!timer.valid) {
+            let aSelector : Selector = "updateTime"
+            timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: aSelector, userInfo: nil, repeats: true)
+            startTime = NSDate.timeIntervalSinceReferenceDate()
+        }
     }
     
     func updateTime(){
@@ -38,17 +40,17 @@ class timerViewController: UIViewController {
         var elapsedTime: NSTimeInterval = currentTime - startTime
         
         
-        let minutes = UInt8(elapsedTime / 60.0)
+        let minutes1 = UInt8(elapsedTime / 60.0)
         elapsedTime -= (NSTimeInterval(minutes) * 60)
-        let seconds = UInt8(elapsedTime)
+        let seconds1 = UInt8(elapsedTime)
         elapsedTime -= NSTimeInterval(seconds)
-        let fraction = UInt8(elapsedTime * 100)
+        let milli1 = UInt8(elapsedTime * 100)
         
         
-        let strMinutes = String(format: "%02d", minutes)
-        let strSeconds = String(format: "%02d", seconds)
-        let strFraction = String(format: "%02d", fraction)
-        displayTimer!.text = "\(strMinutes):\(strSeconds):\(strFraction)"
+        let minutes2 = String(format: "%02d", minutes1)
+        let seconds2 = String(format: "%02d", seconds1)
+        let milli2 = String(format: "%02d", milli1)
+        displayTimer!.text = "\(minutes2):\(seconds2):\(milli2)"
         
     }
 
