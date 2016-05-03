@@ -11,6 +11,8 @@ import UIKit
 class timerViewController: UIViewController {
     
     var startTime = NSTimeInterval()
+    var timer = NSTimer()
+
 
     @IBOutlet weak var displayTimer: UILabel!
     override func viewDidLoad() {
@@ -18,6 +20,19 @@ class timerViewController: UIViewController {
         
 
     }
+    
+    @IBAction func stop(sender: UIButton) {
+        timer.invalidate()
+    }
+    
+    
+    @IBAction func start(sender: UIButton) {
+        
+        let firstSelector : Selector = "updateTimer"
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: firstSelector, userInfo: nil, repeats: true)
+        startTime = NSDate.timeIntervalSinceReferenceDate()
+    }
+    
     func updateTime(){
         var currentTime = NSDate.timeIntervalSinceReferenceDate()
         var elapsedTime: NSTimeInterval = currentTime - startTime
@@ -33,15 +48,9 @@ class timerViewController: UIViewController {
         let strMinutes = String(format: "%02d", minutes)
         let strSeconds = String(format: "%02d", seconds)
         let strFraction = String(format: "%02d", fraction)
-        
-        displayTime.text = “\(strMinutes),\(strSeconds),\(strFraction)”
+        displayTimer!.text = "\(strMinutes):\(strSeconds):\(strFraction)"
         
     }
 
-    }
-
-    @IBAction func start(sender: UIButton) {
-    }
-    @IBAction func stop(sender: UIButton) {
-    }
 }
+
