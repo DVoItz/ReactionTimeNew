@@ -10,7 +10,7 @@ import UIKit
 
 class timerViewController: UIViewController {
     
-    var startTime = NSTimeInterval()
+    var go = NSTimeInterval()
     var timer = NSTimer()
 
 
@@ -27,17 +27,17 @@ class timerViewController: UIViewController {
     
     
     @IBAction func start(sender: UIButton) {
-        
+
         if (!timer.valid) {
-            let aSelector : Selector = "updateTime"
-            timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: aSelector, userInfo: nil, repeats: true)
-            startTime = NSDate.timeIntervalSinceReferenceDate()
+            let test:Selector = "updateTime"
+            timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: test, userInfo: nil, repeats: true)
+            go = NSDate.timeIntervalSinceReferenceDate()
         }
     }
     
     func updateTime(){
-        var currentTime = NSDate.timeIntervalSinceReferenceDate()
-        var elapsedTime: NSTimeInterval = currentTime - startTime
+        var timeNow = NSDate.timeIntervalSinceReferenceDate()
+        var pass: NSTimeInterval = timeNow - go
         
         
         let minutes1 = UInt8(elapsedTime / 60.0)
