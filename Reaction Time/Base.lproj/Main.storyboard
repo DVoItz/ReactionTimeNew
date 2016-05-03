@@ -62,10 +62,10 @@
             </objects>
             <point key="canvasLocation" x="2881" y="349"/>
         </scene>
-        <!--View Controller-->
+        <!--Pass View Controller-->
         <scene sceneID="FLb-xU-jX5">
             <objects>
-                <viewController id="W5e-NX-roy" sceneMemberID="viewController">
+                <viewController id="W5e-NX-roy" customClass="passViewController" customModule="Reaction_Time" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="j8q-Rs-dBx"/>
                         <viewControllerLayoutGuide type="bottom" id="iOk-RF-9cj"/>
