@@ -97,17 +97,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="qJf-RE-W5I">
-                                <rect key="frame" x="0.0" y="64" width="768" height="960"/>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Isv-3c-x1c">
+                                <rect key="frame" x="319" y="497" width="131" height="30"/>
+                                <state key="normal" title="Start Reaction Test"/>
+                                <connections>
+                                    <segue destination="ciq-yG-dY8" kind="presentation" id="ORZ-Qq-zco"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="DvZ-lv-WBx" firstAttribute="top" secondItem="qJf-RE-W5I" secondAttribute="bottom" id="FoJ-Bn-V4Q"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="qJf-RE-W5I" secondAttribute="trailing" constant="-20" id="Htf-US-e4a"/>
-                            <constraint firstItem="qJf-RE-W5I" firstAttribute="top" secondItem="kFB-b7-5OE" secondAttribute="bottom" id="MZ6-Wd-gJk"/>
-                            <constraint firstItem="qJf-RE-W5I" firstAttribute="leading" secondItem="DYk-dS-403" secondAttribute="leadingMargin" constant="-20" id="naX-O1-mf8"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3U6-3t-14P"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
