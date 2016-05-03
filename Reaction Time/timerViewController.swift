@@ -40,11 +40,11 @@ class timerViewController: UIViewController {
         var pass: NSTimeInterval = timeNow - go
         
         
-        let minutes1 = UInt8(elapsedTime / 60.0)
-        elapsedTime -= (NSTimeInterval(minutes1) * 60)
-        let seconds1 = UInt8(elapsedTime)
-        elapsedTime -= NSTimeInterval(seconds1)
-        let milli1 = UInt8(elapsedTime * 100)
+        let minutes1 = UInt8(pass / 60.0)
+        pass -= (NSTimeInterval(minutes1) * 60)
+        let seconds1 = UInt8(pass)
+        pass -= NSTimeInterval(seconds1)
+        let milli1 = UInt8(pass * 100)
         
         
         let minutes2 = String(format: "%02d", minutes1)
