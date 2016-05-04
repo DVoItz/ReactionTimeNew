@@ -17,9 +17,14 @@ class timerViewController: UIViewController {
     @IBOutlet weak var displayTimer: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
     }
     
     @IBAction func stop(sender: UIButton) {
+        if displayTimer.text == "00:01:00"{
+            
+        }
         timer.invalidate()
     }
     
