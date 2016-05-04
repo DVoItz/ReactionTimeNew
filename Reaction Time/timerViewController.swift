@@ -19,12 +19,12 @@ class timerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     @IBAction func stop(sender: UIButton) {
         
         timer.invalidate()
     }
-
+    
     @IBAction func start(sender: UIButton) {
         
         if (!timer.valid) {
@@ -36,7 +36,7 @@ class timerViewController: UIViewController {
     func updateTime(){
         var timeNow = NSDate.timeIntervalSinceReferenceDate()
         var pass: NSTimeInterval = timeNow - go
-
+        
         let minutes1 = UInt8(pass / 60.0)
         pass -= (NSTimeInterval(minutes1) * 60)
         let seconds1 = UInt8(pass)
@@ -51,7 +51,7 @@ class timerViewController: UIViewController {
         if displayTimer.text == "00:01:00"{
             tapStop.image = UIImage(named: "carcrash")
         }
-
+        
         
     }
     
