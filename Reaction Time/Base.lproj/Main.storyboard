@@ -45,7 +45,7 @@
                                     <action selector="stop:" destination="ciq-yG-dY8" eventType="touchUpInside" id="7rw-GM-Tq7"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="carcrash" translatesAutoresizingMaskIntoConstraints="NO" id="s4h-09-YJb">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s4h-09-YJb">
                                 <rect key="frame" x="195" y="441" width="325" height="185"/>
                             </imageView>
                         </subviews>
@@ -138,7 +138,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rules" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOx-vq-M31">
                                 <rect key="frame" x="329" y="430" width="94" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -172,7 +172,6 @@
     </scenes>
     <resources>
         <image name="background1" width="1280" height="1024"/>
-        <image name="carcrash" width="300" height="196"/>
         <image name="pass(Better)" width="204" height="204"/>
     </resources>
 </document>
