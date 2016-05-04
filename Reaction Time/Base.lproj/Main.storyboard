@@ -40,12 +40,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ld4-4P-pLM">
-                                <rect key="frame" x="482" y="283" width="32" height="30"/>
-                                <state key="normal" title="Stop"/>
+                                <rect key="frame" x="195" y="444" width="325" height="180"/>
                                 <connections>
                                     <action selector="stop:" destination="ciq-yG-dY8" eventType="touchUpInside" id="7rw-GM-Tq7"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="carcrash" translatesAutoresizingMaskIntoConstraints="NO" id="s4h-09-YJb">
+                                <rect key="frame" x="195" y="441" width="325" height="185"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -133,6 +135,12 @@
                                     <segue destination="ciq-yG-dY8" kind="presentation" id="ORZ-Qq-zco"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rules" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOx-vq-M31">
+                                <rect key="frame" x="329" y="430" width="94" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -164,6 +172,7 @@
     </scenes>
     <resources>
         <image name="background1" width="1280" height="1024"/>
+        <image name="carcrash" width="300" height="196"/>
         <image name="pass(Better)" width="204" height="204"/>
     </resources>
 </document>
