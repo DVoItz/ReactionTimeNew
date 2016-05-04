@@ -10,6 +10,7 @@ import UIKit
 
 class passViewController: UIViewController {
 
+    @IBOutlet weak var passFailLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
