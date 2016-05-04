@@ -58,6 +58,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="displayTimer" destination="WAt-xl-wps" id="R0c-iZ-ncw"/>
+                        <outlet property="tapStop" destination="s4h-09-YJb" id="3wt-fr-mx6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bh6-p8-iwE" userLabel="First Responder" sceneMemberID="firstResponder"/>
