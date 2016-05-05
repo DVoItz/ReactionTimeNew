@@ -51,9 +51,11 @@ class timerViewController: UIViewController {
         if displayTimer.text == "00:01:00"{
             tapStop.image = UIImage(named: "carcrash")
         }
-        
-        
+         func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+            
+            let NVC1 = segue.destinationViewController as! passViewController
+            NVC1.reactTime = displayTimer.text!
+        }
     }
     
 }
-
