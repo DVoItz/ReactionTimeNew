@@ -9,10 +9,14 @@
 import UIKit
 
 class passViewController: UIViewController {
-
+    
+    var reactTime = String()
+    
     @IBOutlet weak var passFailLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        passFailLabel.text = reactTime
 
     }
+    
 }
