@@ -46,17 +46,19 @@ class timerViewController: UIViewController {
         let minutes2 = String(format: "%02d", minutes1)
         let seconds2 = String(format: "%02d", seconds1)
         let milli2 = String(format: "%02d", milli1)
-        displayTimer!.text = "\(minutes2):\(seconds2):\(milli2)"
+        displayTimer!.text = "\(seconds2).\(milli2)"
         
-        if displayTimer.text == "00:01:00"{
+        if displayTimer.text == "01.00"{
             tapStop.image = UIImage(named: "carcrash")
         }
-         func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-            
-            var time2 = displayTimer.text!
-            let NVC1 = segue.destinationViewController as! passViewController
-            NVC1.reactTime = time2
-        }
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let time2 = displayTimer.text!
+        let NVC1 = segue.destinationViewController as! passViewController
+        NVC1.reactTime = time2
     }
     
 }

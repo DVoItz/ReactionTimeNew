@@ -16,7 +16,9 @@ class passViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print(reactTime)
-        passFailLabel.text! = reactTime
+        var doubleTime = NSString(string: reactTime).doubleValue
+        passFailLabel.textColor = UIColor.whiteColor()
+        passFailLabel.text! = "Your Reaction Time was \(doubleTime - 1)"
 
     }
     
