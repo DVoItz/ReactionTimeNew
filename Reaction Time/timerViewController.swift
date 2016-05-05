@@ -53,8 +53,9 @@ class timerViewController: UIViewController {
         }
          func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
             
+            var time2 = displayTimer.text!
             let NVC1 = segue.destinationViewController as! passViewController
-            NVC1.reactTime = displayTimer.text!
+            NVC1.reactTime = time2
         }
     }
     

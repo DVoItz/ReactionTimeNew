@@ -15,7 +15,8 @@ class passViewController: UIViewController {
     @IBOutlet weak var passFailLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        passFailLabel.text = reactTime
+        print(reactTime)
+        passFailLabel.text! = reactTime
 
     }
     
