@@ -50,6 +50,7 @@ class timerViewController: UIViewController {
         
         if displayTimer.text == "01.00"{
             tapStop.image = UIImage(named: "carcrash")
+            
         }
         
     }
