@@ -28,16 +28,16 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ld4-4P-pLM">
-                                <rect key="frame" x="164" y="570" width="166" height="115"/>
+                                <rect key="frame" x="164" y="570" width="166" height="155"/>
                                 <connections>
                                     <action selector="stop:" destination="ciq-yG-dY8" eventType="touchUpInside" id="7rw-GM-Tq7"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s4h-09-YJb">
-                                <rect key="frame" x="164" y="570" width="173" height="115"/>
+                                <rect key="frame" x="164" y="570" width="173" height="156"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEQ-a9-dlP">
-                                <rect key="frame" x="164" y="570" width="173" height="110"/>
+                                <rect key="frame" x="164" y="570" width="173" height="156"/>
                                 <connections>
                                     <segue destination="W5e-NX-roy" kind="presentation" id="Zhz-Pt-pmd"/>
                                 </connections>
