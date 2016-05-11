@@ -49,7 +49,7 @@ class timerViewController: UIViewController {
         displayTimer!.text = "\(seconds2).\(milli2)"
         
         if displayTimer.text == "01.00"{
-            tapStop.image = UIImage(named: "carcrash")
+            tapStop.image = UIImage(named: "target")
             
         }
         
