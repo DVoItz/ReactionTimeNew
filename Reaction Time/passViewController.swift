@@ -32,8 +32,8 @@ class passViewController: UIViewController {
         else {
             passFailLabel2.text! = "YOU PASSED"
             passFailLabel2.textColor = UIColor.yellowColor()
-            passFailImage.image = UIImage(named: "Smiley1")
-            passFailImage2.image = UIImage(named: "Smiley1")
+            passFailImage.image = UIImage(named: "smiley4")
+            passFailImage2.image = UIImage(named: "smiley4")
         }
 
     }
