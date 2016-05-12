@@ -22,6 +22,7 @@ class timerViewController: UIViewController {
     
     @IBAction func stop(sender: UIButton) {
         
+        
         timer.invalidate()
     }
     
