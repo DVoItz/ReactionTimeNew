@@ -16,8 +16,10 @@ class passViewController: UIViewController {
     @IBOutlet weak var passFailImage: UIImageView!
     @IBOutlet weak var passFailLabel2: UILabel!
     @IBOutlet weak var passFailLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         var doubleTime = NSString(string: reactTime).doubleValue
         print(doubleTime)
         passFailLabel.textColor = UIColor.whiteColor()
@@ -35,7 +37,7 @@ class passViewController: UIViewController {
             passFailImage.image = UIImage(named: "smiley4")
             passFailImage2.image = UIImage(named: "smiley4")
         }
-
+        
     }
     
 }
