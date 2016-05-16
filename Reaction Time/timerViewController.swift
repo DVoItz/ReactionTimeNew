@@ -13,7 +13,6 @@ class timerViewController: UIViewController {
     var go = NSTimeInterval()
     var timer = NSTimer()
     
-    
     @IBOutlet weak var tapStop: UIImageView!
     @IBOutlet weak var displayTimer: UILabel!
     override func viewDidLoad() {
@@ -21,8 +20,7 @@ class timerViewController: UIViewController {
     }
     
     @IBAction func stop(sender: UIButton) {
-        
-        
+
         timer.invalidate()
     }
     
