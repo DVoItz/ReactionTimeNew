@@ -33,42 +33,7 @@ class timerViewController: UIViewController {
 
         timer.invalidate()
     }
-    @IBAction func clicked(sender: UIButton) {
-        self.button1.hidden = true
-        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "appear", userInfo: self, repeats: false)
-    }
-    @IBAction func clicked2(sender: UIButton) {
-        self.button2.hidden = true
-        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "appear", userInfo: self, repeats: false)
-    }
     
-    
-    //@IBAction func clicked(sender: UIButton) {
-      //  self.button1.hidden = true
-        //NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "appear:", userInfo: self, repeats: false)
-    //}
-    func appear(timer: NSTimer) {
-        self.button1.hidden = true
-        NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "disappear:", userInfo: self, repeats: false)
-        
-    }
-    func appear2(timer: NSTimer) {
-        self.button2.hidden = true
-        NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "disappear:", userInfo: self, repeats: false)
-        
-    }
-    func disappear(timer: NSTimer) {
-        self.button1.hidden = false
-        NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "appear:", userInfo: self, repeats: false)
-        
-    }
-    func disappear2(timer: NSTimer) {
-        self.button2.hidden = false
-        NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "appear:", userInfo: self, repeats: false)
-        
-    }
-
-
     @IBAction func start(sender: UIButton) {
         
         if (!timer.valid) {
@@ -93,15 +58,15 @@ class timerViewController: UIViewController {
         displayTimer!.text = "\(seconds2).\(milli2)"
         
         if displayTimer.text == "04.00"{
-            tapStop.image = UIImage(named: "target")
+            tapStop.image = UIImage(named: "lemon")
             
         }
         if displayTimer.text == "01.00"{
-            image1.image = UIImage(named: "target")
+            image1.image = UIImage(named: "lemon")
         
         }
         if displayTimer.text == "02.00"{
-            image2.image = UIImage(named: "target")
+            image2.image = UIImage(named: "lemon")
         }
     }
     
