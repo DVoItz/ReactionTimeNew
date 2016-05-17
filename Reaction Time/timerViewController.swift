@@ -9,6 +9,12 @@
 import UIKit
 
 class timerViewController: UIViewController {
+    @IBOutlet weak var image3: UIImageView!
+    @IBOutlet weak var image2: UIImageView!
+    @IBOutlet weak var image1: UIImageView!
+    @IBOutlet weak var button2: UIButton!
+    @IBOutlet weak var button1: UIButton!
+    @IBOutlet weak var button3: UIButton!
     
     var go = NSTimeInterval()
     var timer = NSTimer()
@@ -17,13 +23,52 @@ class timerViewController: UIViewController {
     @IBOutlet weak var displayTimer: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        button2.hidden = true
+        button1.hidden = true
+        NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "appear:", userInfo: self, repeats: false)
     }
     
     @IBAction func stop(sender: UIButton) {
 
         timer.invalidate()
     }
+    @IBAction func clicked(sender: UIButton) {
+        self.button1.hidden = true
+        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "appear", userInfo: self, repeats: false)
+    }
+    @IBAction func clicked2(sender: UIButton) {
+        self.button2.hidden = true
+        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "appear", userInfo: self, repeats: false)
+    }
     
+    
+    //@IBAction func clicked(sender: UIButton) {
+      //  self.button1.hidden = true
+        //NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "appear:", userInfo: self, repeats: false)
+    //}
+    func appear(timer: NSTimer) {
+        self.button1.hidden = true
+        NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "disappear:", userInfo: self, repeats: false)
+        
+    }
+    func appear2(timer: NSTimer) {
+        self.button2.hidden = true
+        NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "disappear:", userInfo: self, repeats: false)
+        
+    }
+    func disappear(timer: NSTimer) {
+        self.button1.hidden = false
+        NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "appear:", userInfo: self, repeats: false)
+        
+    }
+    func disappear2(timer: NSTimer) {
+        self.button2.hidden = false
+        NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "appear:", userInfo: self, repeats: false)
+        
+    }
+
+
     @IBAction func start(sender: UIButton) {
         
         if (!timer.valid) {
@@ -47,11 +92,17 @@ class timerViewController: UIViewController {
         let milli2 = String(format: "%02d", milli1)
         displayTimer!.text = "\(seconds2).\(milli2)"
         
-        if displayTimer.text == "01.00"{
+        if displayTimer.text == "04.00"{
             tapStop.image = UIImage(named: "target")
             
         }
+        if displayTimer.text == "01.00"{
+            image1.image = UIImage(named: "target")
         
+        }
+        if displayTimer.text == "02.00"{
+            image2.image = UIImage(named: "target")
+        }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
