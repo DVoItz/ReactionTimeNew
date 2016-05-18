@@ -24,9 +24,7 @@ class timerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        button2.hidden = true
-        button1.hidden = true
-        NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "appear:", userInfo: self, repeats: false)
+        
     }
     
     @IBAction func stop(sender: UIButton) {
@@ -57,6 +55,8 @@ class timerViewController: UIViewController {
         let milli2 = String(format: "%02d", milli1)
         displayTimer!.text = "\(seconds2).\(milli2)"
         
+        print(displayTimer.text)
+        
         if displayTimer.text == "04.00"{
             tapStop.image = UIImage(named: "lemon")
             
@@ -68,6 +68,11 @@ class timerViewController: UIViewController {
         if displayTimer.text == "02.00"{
             image2.image = UIImage(named: "lemon")
         }
+        if displayTimer.text == "03.00"{
+            image3.image = UIImage(named: "lemon")
+        }
+        
+
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

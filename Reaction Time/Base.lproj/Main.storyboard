@@ -54,15 +54,9 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PmK-KK-YWy">
                                 <rect key="frame" x="183" y="812" width="162" height="119"/>
-                                <connections>
-                                    <action selector="clicked:" destination="ciq-yG-dY8" eventType="touchUpInside" id="fv3-de-KEf"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGc-ry-z1X">
                                 <rect key="frame" x="421" y="838" width="177" height="122"/>
-                                <connections>
-                                    <action selector="clicked2:" destination="ciq-yG-dY8" eventType="touchUpInside" id="0oW-a2-ihR"/>
-                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CmE-eV-x0i">
                                 <rect key="frame" x="183" y="803" width="162" height="128"/>
@@ -87,6 +81,7 @@
                         <outlet property="displayTimer" destination="WAt-xl-wps" id="R0c-iZ-ncw"/>
                         <outlet property="image1" destination="CmE-eV-x0i" id="pIb-pu-c7i"/>
                         <outlet property="image2" destination="zTw-iH-KJZ" id="V6w-yC-P5C"/>
+                        <outlet property="image3" destination="FAW-f1-02p" id="ohm-qq-Xip"/>
                         <outlet property="tapStop" destination="s4h-09-YJb" id="3wt-fr-mx6"/>
                     </connections>
                 </viewController>
