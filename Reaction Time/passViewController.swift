@@ -21,7 +21,6 @@ class passViewController: UIViewController {
         super.viewDidLoad()
         
         var doubleTime = NSString(string: reactTime).doubleValue
-        print(doubleTime)
         passFailLabel.textColor = UIColor.whiteColor()
         passFailLabel.text! = "\(doubleTime - 1)"
         

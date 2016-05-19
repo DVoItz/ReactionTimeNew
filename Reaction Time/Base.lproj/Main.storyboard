@@ -53,31 +53,37 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PmK-KK-YWy">
-                                <rect key="frame" x="183" y="812" width="162" height="119"/>
+                                <rect key="frame" x="183" y="835" width="162" height="119"/>
+                                <connections>
+                                    <action selector="appear1:" destination="ciq-yG-dY8" eventType="touchUpInside" id="ecc-Cf-Fir"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGc-ry-z1X">
-                                <rect key="frame" x="421" y="838" width="177" height="122"/>
+                                <rect key="frame" x="421" y="856" width="177" height="122"/>
+                                <connections>
+                                    <action selector="appear2:" destination="ciq-yG-dY8" eventType="touchUpInside" id="GfV-FV-xKT"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CmE-eV-x0i">
-                                <rect key="frame" x="183" y="803" width="162" height="128"/>
+                                <rect key="frame" x="183" y="835" width="162" height="128"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zTw-iH-KJZ">
-                                <rect key="frame" x="421" y="838" width="177" height="128"/>
+                                <rect key="frame" x="421" y="853" width="177" height="128"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FAW-f1-02p">
                                 <rect key="frame" x="530" y="570" width="160" height="128"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbj-4y-Y94">
                                 <rect key="frame" x="530" y="570" width="160" height="128"/>
+                                <connections>
+                                    <action selector="appear3:" destination="ciq-yG-dY8" eventType="touchUpInside" id="As2-Rn-hmq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
-                        <outlet property="button1" destination="PmK-KK-YWy" id="nh2-GP-Nyf"/>
-                        <outlet property="button2" destination="uGc-ry-z1X" id="Tg4-az-3Ml"/>
-                        <outlet property="button3" destination="Tbj-4y-Y94" id="HYy-ld-Poz"/>
                         <outlet property="displayTimer" destination="WAt-xl-wps" id="R0c-iZ-ncw"/>
                         <outlet property="image1" destination="CmE-eV-x0i" id="pIb-pu-c7i"/>
                         <outlet property="image2" destination="zTw-iH-KJZ" id="V6w-yC-P5C"/>

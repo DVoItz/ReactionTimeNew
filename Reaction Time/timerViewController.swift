@@ -12,12 +12,14 @@ class timerViewController: UIViewController {
     @IBOutlet weak var image3: UIImageView!
     @IBOutlet weak var image2: UIImageView!
     @IBOutlet weak var image1: UIImageView!
-    @IBOutlet weak var button2: UIButton!
-    @IBOutlet weak var button1: UIButton!
-    @IBOutlet weak var button3: UIButton!
+    
     
     var go = NSTimeInterval()
     var timer = NSTimer()
+    var average1 = ""
+    var average2 = ""
+    var average3 = ""
+    var average4 = ""
     
     @IBOutlet weak var tapStop: UIImageView!
     @IBOutlet weak var displayTimer: UILabel!
@@ -25,9 +27,25 @@ class timerViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    @IBAction func appear1(sender: UIButton) {
+        image2.image = UIImage(named: "lemon")
+        image1.image = UIImage(named: "")
+        average1 = displayTimer.text!
+    
+    }
+    @IBAction func appear2(sender: UIButton) {
+        image3.image = UIImage(named: "lemon")
+        image2.image = UIImage(named: "")
+        average2 = displayTimer.text!
+    }
+    @IBAction func appear3(sender: UIButton) {
+        tapStop.image = UIImage(named: "lemon")
+        image3.image = UIImage(named: "")
+        average3 = displayTimer.text!
+    }
     @IBAction func stop(sender: UIButton) {
-
         timer.invalidate()
+        average4 = displayTimer.text!
     }
     
     @IBAction func start(sender: UIButton) {
@@ -54,7 +72,7 @@ class timerViewController: UIViewController {
         displayTimer!.text = "\(seconds2).\(milli2)"
         
         if displayTimer.text == "04.00"{
-            tapStop.image = UIImage(named: "lemon")
+            //tapStop.image = UIImage(named: "lemon")
             
         }
         if displayTimer.text == "01.00"{
@@ -62,10 +80,10 @@ class timerViewController: UIViewController {
         
         }
         if displayTimer.text == "02.00"{
-            image2.image = UIImage(named: "lemon")
+            //image2.image = UIImage(named: "lemon")
         }
         if displayTimer.text == "03.00"{
-            image3.image = UIImage(named: "lemon")
+            //image3.image = UIImage(named: "lemon")
         }
     }
     
