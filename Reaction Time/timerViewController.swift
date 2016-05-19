@@ -23,10 +23,6 @@ class timerViewController: UIViewController {
     @IBOutlet weak var displayTimer: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        button2.hidden = true
-        button1.hidden = true
-        NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "appear:", userInfo: self, repeats: false)
     }
     
     @IBAction func stop(sender: UIButton) {
