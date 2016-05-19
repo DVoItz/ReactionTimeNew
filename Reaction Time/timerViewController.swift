@@ -64,6 +64,9 @@ class timerViewController: UIViewController {
         if displayTimer.text == "02.00"{
             image2.image = UIImage(named: "lemon")
         }
+        if displayTimer.text == "03.00"{
+            image3.image = UIImage(named: "lemon")
+        }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
