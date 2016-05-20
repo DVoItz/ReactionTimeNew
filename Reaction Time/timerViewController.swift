@@ -89,9 +89,11 @@ class timerViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        let time2 = displayTimer.text!
         let NVC1 = segue.destinationViewController as! passViewController
-        NVC1.reactTime = time2
+        NVC1.reactTime1 = average1
+        NVC1.reactTime2 = average2
+        NVC1.reactTime3 = average3
+        NVC1.reactTime4 = average4
     }
     
 }

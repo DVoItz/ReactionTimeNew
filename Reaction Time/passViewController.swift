@@ -10,7 +10,10 @@ import UIKit
 
 class passViewController: UIViewController {
     
-    var reactTime = String()
+    var reactTime1 = String()
+    var reactTime2 = String()
+    var reactTime3 = String()
+    var reactTime4 = String()
     
     @IBOutlet weak var passFailImage2: UIImageView!
     @IBOutlet weak var passFailImage: UIImageView!
@@ -20,11 +23,17 @@ class passViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var doubleTime = NSString(string: reactTime).doubleValue
+        var doubleTime = NSString(string: reactTime1).doubleValue
+        var doubleTime2 = NSString(string: reactTime2).doubleValue
+        var doubleTime3 = NSString(string: reactTime3).doubleValue
+        var doubleTime4 = NSString(string: reactTime4).doubleValue
+        var added = doubleTime + doubleTime2 + doubleTime3 + doubleTime4
+        var averageTotal = added / 4
+        var averageFinal = averageTotal - 1
         passFailLabel.textColor = UIColor.whiteColor()
-        passFailLabel.text! = "\(doubleTime - 1)"
+        passFailLabel.text! = "\(averageFinal)"
         
-        if doubleTime > 1.62 {
+        if averageFinal > 0.8 {
             passFailLabel2.text! = "YOU FAILED"
             passFailLabel2.textColor = UIColor.redColor()
             passFailImage.image = UIImage(named: "fail")
