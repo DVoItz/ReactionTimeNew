@@ -23,13 +23,13 @@ class passViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var doubleTime = NSString(string: reactTime1).doubleValue
-        var doubleTime2 = NSString(string: reactTime2).doubleValue
-        var doubleTime3 = NSString(string: reactTime3).doubleValue
-        var doubleTime4 = NSString(string: reactTime4).doubleValue
-        var added = doubleTime + doubleTime2 + doubleTime3 + doubleTime4
-        var averageTotal = added / 4
-        var averageFinal = averageTotal - 1
+        let doubleTime = NSString(string: reactTime1).doubleValue
+        let doubleTime2 = NSString(string: reactTime2).doubleValue
+        let doubleTime3 = NSString(string: reactTime3).doubleValue
+        let doubleTime4 = NSString(string: reactTime4).doubleValue
+        let added = doubleTime + doubleTime2 + doubleTime3 + doubleTime4
+        let averageTotal = added / 4
+        let averageFinal = averageTotal - 1
         passFailLabel.textColor = UIColor.whiteColor()
         passFailLabel.text! = "\(averageFinal)"
         

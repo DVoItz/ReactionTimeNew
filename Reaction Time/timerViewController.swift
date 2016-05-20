@@ -57,7 +57,7 @@ class timerViewController: UIViewController {
         }
     }
     func updateTime(){
-        var timeNow = NSDate.timeIntervalSinceReferenceDate()
+        let timeNow = NSDate.timeIntervalSinceReferenceDate()
         var pass: NSTimeInterval = timeNow - go
         
         let minutes1 = UInt8(pass / 60.0)
