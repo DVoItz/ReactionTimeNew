@@ -71,19 +71,9 @@ class timerViewController: UIViewController {
         let milli2 = String(format: "%02d", milli1)
         displayTimer!.text = "\(seconds2).\(milli2)"
         
-        if displayTimer.text == "04.00"{
-            //tapStop.image = UIImage(named: "lemon")
-            
-        }
         if displayTimer.text == "01.00"{
             image1.image = UIImage(named: "lemon")
         
-        }
-        if displayTimer.text == "02.00"{
-            //image2.image = UIImage(named: "lemon")
-        }
-        if displayTimer.text == "03.00"{
-            //image3.image = UIImage(named: "lemon")
         }
     }
     
