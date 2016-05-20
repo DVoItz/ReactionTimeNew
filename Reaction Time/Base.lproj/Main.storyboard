@@ -69,7 +69,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zx-Ei-vcQ">
-                                <rect key="frame" x="137" y="280" width="456" height="35"/>
+                                <rect key="frame" x="137" y="280" width="456" height="46"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="30"/>
                                 <state key="normal" title="Tap Me To Start, Get Ready!!">
