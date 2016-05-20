@@ -15,6 +15,7 @@ class passViewController: UIViewController {
     var reactTime3 = String()
     var reactTime4 = String()
     
+    @IBOutlet weak var labelFail: UILabel!
     @IBOutlet weak var passFailImage2: UIImageView!
     @IBOutlet weak var passFailImage: UIImageView!
     @IBOutlet weak var passFailLabel2: UILabel!
@@ -33,17 +34,21 @@ class passViewController: UIViewController {
         passFailLabel.textColor = UIColor.whiteColor()
         passFailLabel.text! = "\(averageFinal)"
         
-        if averageFinal > 0.62 {
+        if averageFinal > 0.70 {
             passFailLabel2.text! = "YOU FAILED"
             passFailLabel2.textColor = UIColor.redColor()
             passFailImage.image = UIImage(named: "fail")
             passFailImage2.image = UIImage(named: "fail")
+            labelFail.text! = "Your SLOWER than the average Reaction Time!!"
+            labelFail.textColor = UIColor.redColor()
         }
         else {
             passFailLabel2.text! = "YOU PASSED"
             passFailLabel2.textColor = UIColor.yellowColor()
             passFailImage.image = UIImage(named: "smiley4")
             passFailImage2.image = UIImage(named: "smiley4")
+            labelFail.text! = "Your FASTER than the average Reaction Time!!"
+            labelFail.textColor = UIColor.yellowColor()
         }
         
     }
