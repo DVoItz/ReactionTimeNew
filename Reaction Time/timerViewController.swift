@@ -31,7 +31,7 @@ class timerViewController: UIViewController {
         image2.image = UIImage(named: "lemon")
         image1.image = UIImage(named: "")
         average1 = displayTimer.text!
-    
+        
     }
     @IBAction func appear2(sender: UIButton) {
         image3.image = UIImage(named: "lemon")
@@ -73,7 +73,7 @@ class timerViewController: UIViewController {
         
         if displayTimer.text == "01.00"{
             image1.image = UIImage(named: "lemon")
-        
+            
         }
     }
     
