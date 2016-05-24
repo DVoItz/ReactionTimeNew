@@ -39,7 +39,7 @@ class passViewController: UIViewController {
             passFailLabel2.textColor = UIColor.redColor()
             passFailImage.image = UIImage(named: "fail")
             passFailImage2.image = UIImage(named: "fail")
-            labelFail.text! = "Your SLOWER than the average Reaction Time!!"
+            labelFail.text! = "You're SLOWER than the average Reaction Time!!"
             labelFail.textColor = UIColor.redColor()
         }
         else {
@@ -47,10 +47,9 @@ class passViewController: UIViewController {
             passFailLabel2.textColor = UIColor.yellowColor()
             passFailImage.image = UIImage(named: "smiley4")
             passFailImage2.image = UIImage(named: "smiley4")
-            labelFail.text! = "Your FASTER than the average Reaction Time!!"
-            labelFail.textColor = UIColor.whiteColor()
+            labelFail.text! = "You're FASTER than the average Reaction Time!!"
+            labelFail.textColor = UIColor.yellowColor()
         }
-        
     }
     
 }

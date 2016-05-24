@@ -14,5 +14,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
     }
-
+    //override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+      //  return UIInterfaceOrientationMask.Portrait
+    //}
+    //override func shouldAutorotate() -> Bool {
+      //  return true
+    //}
 }

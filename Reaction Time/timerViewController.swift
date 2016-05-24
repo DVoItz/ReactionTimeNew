@@ -47,7 +47,6 @@ class timerViewController: UIViewController {
         timer.invalidate()
         average4 = displayTimer.text!
     }
-    
     @IBAction func start(sender: UIButton) {
         
         if (!timer.valid) {
