@@ -82,6 +82,7 @@
                         <outlet property="falseButton1" destination="PmK-KK-YWy" id="Khv-hT-ndI"/>
                         <outlet property="falseButton2" destination="uGc-ry-z1X" id="sw6-MQ-ejz"/>
                         <outlet property="falseButton3" destination="Tbj-4y-Y94" id="I9C-Ky-Gsd"/>
+                        <outlet property="hide1" destination="9zx-Ei-vcQ" id="Amd-Fb-jVv"/>
                         <outlet property="image1" destination="CmE-eV-x0i" id="pIb-pu-c7i"/>
                         <outlet property="image2" destination="zTw-iH-KJZ" id="V6w-yC-P5C"/>
                         <outlet property="image3" destination="FAW-f1-02p" id="N1L-fF-H4K"/>

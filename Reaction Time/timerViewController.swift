@@ -21,6 +21,7 @@ class timerViewController: UIViewController {
     var average3 = ""
     var average4 = ""
     
+    @IBOutlet weak var hide1: UIButton!
     @IBOutlet weak var test: UIButton!
     @IBOutlet weak var falseButton3: UIButton!
     @IBOutlet weak var falseButton2: UIButton!
@@ -72,6 +73,7 @@ class timerViewController: UIViewController {
             let test:Selector = "updateTime"
             timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: test, userInfo: nil, repeats: true)
             go = NSDate.timeIntervalSinceReferenceDate()
+            hide1.hidden = true
         }
     }
     func updateTime(){
