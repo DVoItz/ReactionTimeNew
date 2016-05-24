@@ -54,6 +54,7 @@ class timerViewController: UIViewController {
         falseButton2.enabled = false
         
     }
+    
     @IBAction func appear3(sender: UIButton) {
         tapStop.image = UIImage(named: "lemon")
         image3.image = UIImage(named: "")
