@@ -74,9 +74,16 @@ class timerViewController: UIViewController {
             let test:Selector = "updateTime"
             timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: test, userInfo: nil, repeats: true)
             go = NSDate.timeIntervalSinceReferenceDate()
-            hide1.hidden = true
+            
+            sender.highlighted = false
+            UIView.animateWithDuration(0.5, delay: 0, options: .CurveLinear, animations: { sender.alpha = 0 }, completion: nil)
         }
     }
+    
+    @IBAction func fadeAway(sender: UIButton) {
+        sender.highlighted = false
+    }
+    
     func updateTime(){
         let timeNow = NSDate.timeIntervalSinceReferenceDate()
         var pass: NSTimeInterval = timeNow - go
