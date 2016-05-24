@@ -21,6 +21,7 @@ class timerViewController: UIViewController {
     var average3 = ""
     var average4 = ""
     
+    @IBOutlet weak var hide1: UIButton!
     @IBOutlet weak var test: UIButton!
     @IBOutlet weak var falseButton3: UIButton!
     @IBOutlet weak var falseButton2: UIButton!
@@ -39,6 +40,10 @@ class timerViewController: UIViewController {
         image2.image = UIImage(named: "lemon")
         image1.image = UIImage(named: "")
         average1 = displayTimer.text!
+        falseButton2.enabled = true
+        falseButton1.enabled = false
+
+
         
     }
     @IBAction func appear2(sender: UIButton) {
@@ -55,6 +60,7 @@ class timerViewController: UIViewController {
         average3 = displayTimer.text!
         test.enabled = true
         falseButton3.enabled = false
+        test.enabled = true
     }
     @IBAction func stop(sender: UIButton) {
         timer.invalidate()
@@ -67,6 +73,7 @@ class timerViewController: UIViewController {
             let test:Selector = "updateTime"
             timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: test, userInfo: nil, repeats: true)
             go = NSDate.timeIntervalSinceReferenceDate()
+            hide1.hidden = true
         }
     }
     func updateTime(){
@@ -86,6 +93,7 @@ class timerViewController: UIViewController {
         
         if displayTimer.text == "01.00"{
             image1.image = UIImage(named: "lemon")
+            falseButton1.enabled = true
             
         }
     }
