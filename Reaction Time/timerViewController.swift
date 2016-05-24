@@ -21,10 +21,18 @@ class timerViewController: UIViewController {
     var average3 = ""
     var average4 = ""
     
+    @IBOutlet weak var test: UIButton!
+    @IBOutlet weak var falseButton3: UIButton!
+    @IBOutlet weak var falseButton2: UIButton!
+    @IBOutlet weak var falseButton1: UIButton!
     @IBOutlet weak var tapStop: UIImageView!
     @IBOutlet weak var displayTimer: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        falseButton1.enabled = false
+        falseButton2.enabled = false
+        falseButton3.enabled = false
+        test.enabled = false
     }
     
     @IBAction func appear1(sender: UIButton) {
@@ -37,15 +45,21 @@ class timerViewController: UIViewController {
         image3.image = UIImage(named: "lemon")
         image2.image = UIImage(named: "")
         average2 = displayTimer.text!
+        falseButton3.enabled = true
+        falseButton2.enabled = false
+        
     }
     @IBAction func appear3(sender: UIButton) {
         tapStop.image = UIImage(named: "lemon")
         image3.image = UIImage(named: "")
         average3 = displayTimer.text!
+        test.enabled = true
+        falseButton3.enabled = false
     }
     @IBAction func stop(sender: UIButton) {
         timer.invalidate()
         average4 = displayTimer.text!
+        
     }
     @IBAction func start(sender: UIButton) {
         

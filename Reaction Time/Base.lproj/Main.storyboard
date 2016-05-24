@@ -20,21 +20,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="newBG16" translatesAutoresizingMaskIntoConstraints="NO" id="Yfj-Ec-pkF">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ld4-4P-pLM">
-                                <rect key="frame" x="164" y="570" width="166" height="155"/>
-                                <connections>
-                                    <action selector="stop:" destination="ciq-yG-dY8" eventType="touchUpInside" id="7rw-GM-Tq7"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s4h-09-YJb">
                                 <rect key="frame" x="164" y="570" width="173" height="156"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEQ-a9-dlP">
-                                <rect key="frame" x="164" y="570" width="173" height="156"/>
-                                <connections>
-                                    <segue destination="W5e-NX-roy" kind="presentation" id="Zhz-Pt-pmd"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAt-xl-wps">
                                 <rect key="frame" x="0.0" y="-23" width="173" height="110"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
@@ -79,16 +67,26 @@
                                     <action selector="start:" destination="ciq-yG-dY8" eventType="touchUpInside" id="Ves-3A-0ri"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEQ-a9-dlP">
+                                <rect key="frame" x="164" y="570" width="173" height="156"/>
+                                <connections>
+                                    <segue destination="W5e-NX-roy" kind="presentation" id="9mh-BI-5yL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="displayTimer" destination="WAt-xl-wps" id="R0c-iZ-ncw"/>
+                        <outlet property="falseButton1" destination="PmK-KK-YWy" id="Khv-hT-ndI"/>
+                        <outlet property="falseButton2" destination="uGc-ry-z1X" id="sw6-MQ-ejz"/>
+                        <outlet property="falseButton3" destination="Tbj-4y-Y94" id="I9C-Ky-Gsd"/>
                         <outlet property="image1" destination="CmE-eV-x0i" id="pIb-pu-c7i"/>
                         <outlet property="image2" destination="zTw-iH-KJZ" id="V6w-yC-P5C"/>
                         <outlet property="image3" destination="FAW-f1-02p" id="N1L-fF-H4K"/>
                         <outlet property="tapStop" destination="s4h-09-YJb" id="3wt-fr-mx6"/>
+                        <outlet property="test" destination="qEQ-a9-dlP" id="Kdc-4N-wtC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bh6-p8-iwE" userLabel="First Responder" sceneMemberID="firstResponder"/>
