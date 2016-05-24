@@ -64,12 +64,14 @@
                                     <color key="titleColor" red="1" green="0.51695688529999995" blue="0.58373171209999997" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="start:" destination="ciq-yG-dY8" eventType="touchUpInside" id="Ves-3A-0ri"/>
+                                    <action selector="fadeAway:" destination="ciq-yG-dY8" eventType="touchDown" id="Sz6-By-eSx"/>
+                                    <action selector="start:" destination="ciq-yG-dY8" eventType="touchUpInside" id="Z5b-Sl-kiO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEQ-a9-dlP">
                                 <rect key="frame" x="164" y="570" width="173" height="156"/>
                                 <connections>
+                                    <action selector="stop:" destination="ciq-yG-dY8" eventType="touchUpInside" id="qTs-2l-INQ"/>
                                     <segue destination="W5e-NX-roy" kind="presentation" id="9mh-BI-5yL"/>
                                 </connections>
                             </button>
