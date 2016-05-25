@@ -35,6 +35,7 @@ class timerViewController: UIViewController {
         falseButton2.enabled = false
         falseButton3.enabled = false
        // test.enabled = false
+        
     }
     
     @IBAction func appear1(sender: UIButton) {
@@ -72,6 +73,8 @@ class timerViewController: UIViewController {
             
             sender.highlighted = false
             UIView.animateWithDuration(0.8, delay: 0, options: .TransitionCurlDown, animations: { sender.alpha = 0 }, completion: nil)
+                ven1.image = UIImage(named: "ven1")
+
         }
     }
     
@@ -97,8 +100,6 @@ class timerViewController: UIViewController {
         if displayTimer.text == "01.00"{
             image1.image = UIImage(named: "lemon")
             falseButton1.enabled = true
-            ven1.image = UIImage(named: "ven1")
-            
         }
     }
     
