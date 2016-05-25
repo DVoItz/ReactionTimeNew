@@ -42,8 +42,8 @@ class timerViewController: UIViewController {
         average1 = displayTimer.text!
         falseButton2.enabled = true
         falseButton1.enabled = false
-
-
+        
+        
         
     }
     @IBAction func appear2(sender: UIButton) {
@@ -76,7 +76,7 @@ class timerViewController: UIViewController {
             go = NSDate.timeIntervalSinceReferenceDate()
             
             sender.highlighted = false
-            UIView.animateWithDuration(0.5, delay: 0, options: .CurveLinear, animations: { sender.alpha = 0 }, completion: nil)
+            UIView.animateWithDuration(1.0, delay: 0, options: .CurveLinear, animations: { sender.alpha = 0 }, completion: nil)
         }
     }
     
