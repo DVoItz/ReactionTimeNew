@@ -34,7 +34,7 @@ class timerViewController: UIViewController {
         falseButton1.enabled = false
         falseButton2.enabled = false
         falseButton3.enabled = false
-       // test.enabled = false
+        test.enabled = false
     }
     
     @IBAction func appear1(sender: UIButton) {
@@ -58,6 +58,7 @@ class timerViewController: UIViewController {
         image3.image = UIImage(named: "")
         average3 = displayTimer.text!
         falseButton3.enabled = false
+        test.enabled = true
     }
     @IBAction func stop(sender: UIButton) {
         timer.invalidate()
@@ -96,9 +97,7 @@ class timerViewController: UIViewController {
         
         if displayTimer.text == "01.00"{
             image1.image = UIImage(named: "lemon")
-            falseButton1.enabled = true
-            ven1.image = UIImage(named: "ven1")
-            
+            falseButton1.enabled = true            
         }
     }
     
