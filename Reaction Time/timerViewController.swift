@@ -67,9 +67,7 @@ class timerViewController: UIViewController {
         
     }
     @IBAction func start(sender: UIButton) {
-        
-        ven1.image = UIImage(named: "ven1")
-        if (!timer.valid) {
+            if (!timer.valid) {
             let test:Selector = "updateTime"
             timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: test, userInfo: nil, repeats: true)
             go = NSDate.timeIntervalSinceReferenceDate()
@@ -101,6 +99,7 @@ class timerViewController: UIViewController {
         if displayTimer.text == "01.00"{
             image1.image = UIImage(named: "lemon")
             falseButton1.enabled = true
+            ven1.image = UIImage(named: "ven1")
             
         }
     }
