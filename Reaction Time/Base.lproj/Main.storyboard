@@ -149,12 +149,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcA-74-aae">
-                                <rect key="frame" x="159" y="28" width="452" height="122"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Had a distraction?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jD3-zx-Vok">
                                 <rect key="frame" x="226" y="671" width="331" height="70"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="39"/>
@@ -166,7 +160,6 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
-                        <outlet property="labelFail" destination="XcA-74-aae" id="ss4-HL-Pdl"/>
                         <outlet property="passFailImage" destination="kXM-Mv-Aam" id="9GO-xg-VxH"/>
                         <outlet property="passFailImage2" destination="OLU-kL-Zcr" id="iVg-fO-67I"/>
                         <outlet property="passFailLabel" destination="xGE-h3-j3d" id="GqN-aU-Tad"/>
