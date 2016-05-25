@@ -39,17 +39,11 @@
                                 <rect key="frame" x="20" y="876" width="162" height="128"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zTw-iH-KJZ">
-                                <rect key="frame" x="500" y="492" width="177" height="128"/>
+                                <rect key="frame" x="500" y="489" width="177" height="128"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FAW-f1-02p">
                                 <rect key="frame" x="564" y="96" width="160" height="128"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbj-4y-Y94">
-                                <rect key="frame" x="564" y="96" width="160" height="128"/>
-                                <connections>
-                                    <action selector="appear3:" destination="ciq-yG-dY8" eventType="touchUpInside" id="As2-Rn-hmq"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zx-Ei-vcQ">
                                 <rect key="frame" x="137" y="280" width="456" height="46"/>
                                 <color key="backgroundColor" red="1" green="0.90668006270000001" blue="0.131158842" alpha="1" colorSpace="calibratedRGB"/>
@@ -75,6 +69,12 @@
                                     <action selector="appear1:" destination="ciq-yG-dY8" eventType="touchUpInside" id="ecc-Cf-Fir"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbj-4y-Y94">
+                                <rect key="frame" x="564" y="96" width="160" height="128"/>
+                                <connections>
+                                    <action selector="appear3:" destination="ciq-yG-dY8" eventType="touchUpInside" id="As2-Rn-hmq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -90,6 +90,7 @@
                         <outlet property="image3" destination="FAW-f1-02p" id="N1L-fF-H4K"/>
                         <outlet property="tapStop" destination="s4h-09-YJb" id="3wt-fr-mx6"/>
                         <outlet property="test" destination="qEQ-a9-dlP" id="Kdc-4N-wtC"/>
+                        <outlet property="ven1" destination="Yfj-Ec-pkF" id="AVk-XI-AZw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bh6-p8-iwE" userLabel="First Responder" sceneMemberID="firstResponder"/>
