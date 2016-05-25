@@ -75,7 +75,7 @@ class timerViewController: UIViewController {
             go = NSDate.timeIntervalSinceReferenceDate()
             
             sender.highlighted = false
-            UIView.animateWithDuration(0.5, delay: 0, options: .CurveLinear, animations: { sender.alpha = 0 }, completion: nil)
+            UIView.animateWithDuration(0.5, delay: 0, options: .CurveEaseOut, animations: { sender.alpha = 0 }, completion: nil)
         }
     }
     
