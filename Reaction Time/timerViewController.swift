@@ -34,7 +34,7 @@ class timerViewController: UIViewController {
         falseButton1.enabled = false
         falseButton2.enabled = false
         falseButton3.enabled = false
-       // test.enabled = false
+       test.enabled = false
         
     }
     
@@ -75,8 +75,6 @@ class timerViewController: UIViewController {
             
             sender.highlighted = false
             UIView.animateWithDuration(0.8, delay: 0, options: .TransitionCurlDown, animations: { sender.alpha = 0 }, completion: nil)
-                ven1.image = UIImage(named: "ven1")
-
         }
     }
     
