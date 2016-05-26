@@ -45,7 +45,7 @@
                                 <rect key="frame" x="564" y="96" width="160" height="128"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zx-Ei-vcQ">
-                                <rect key="frame" x="137" y="280" width="456" height="46"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <color key="backgroundColor" red="1" green="0.90668006270000001" blue="0.131158842" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="30"/>
                                 <state key="normal" title="Tap Me To Start, Get Ready!!">
@@ -54,13 +54,6 @@
                                 <connections>
                                     <action selector="fadeAway:" destination="ciq-yG-dY8" eventType="touchDown" id="Sz6-By-eSx"/>
                                     <action selector="start:" destination="ciq-yG-dY8" eventType="touchUpInside" id="Z5b-Sl-kiO"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEQ-a9-dlP">
-                                <rect key="frame" x="49" y="345" width="173" height="156"/>
-                                <connections>
-                                    <action selector="stop:" destination="ciq-yG-dY8" eventType="touchUpInside" id="qTs-2l-INQ"/>
-                                    <segue destination="W5e-NX-roy" kind="presentation" id="9mh-BI-5yL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PmK-KK-YWy">
@@ -73,6 +66,13 @@
                                 <rect key="frame" x="564" y="96" width="160" height="128"/>
                                 <connections>
                                     <action selector="appear3:" destination="ciq-yG-dY8" eventType="touchUpInside" id="As2-Rn-hmq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEQ-a9-dlP">
+                                <rect key="frame" x="49" y="345" width="173" height="156"/>
+                                <connections>
+                                    <action selector="stop:" destination="ciq-yG-dY8" eventType="touchUpInside" id="qTs-2l-INQ"/>
+                                    <segue destination="W5e-NX-roy" kind="presentation" modalTransitionStyle="flipHorizontal" id="9mh-BI-5yL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -213,7 +213,7 @@
                                     <color key="titleColor" red="1" green="0.90668006269462542" blue="0.13115884202082739" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ciq-yG-dY8" kind="presentation" id="ORZ-Qq-zco"/>
+                                    <segue destination="ciq-yG-dY8" kind="presentation" modalTransitionStyle="flipHorizontal" id="ORZ-Qq-zco"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="* When The Images Appear, CLICK THEM !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOG-zQ-wsG">
