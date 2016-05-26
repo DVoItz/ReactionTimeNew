@@ -155,11 +155,18 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DONT DELETE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uvk-cl-N5H">
+                                <rect key="frame" x="185" y="38" width="432" height="112"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
+                        <outlet property="labelFail" destination="Uvk-cl-N5H" id="gIl-Sk-X1J"/>
                         <outlet property="passFailImage" destination="kXM-Mv-Aam" id="9GO-xg-VxH"/>
                         <outlet property="passFailImage2" destination="OLU-kL-Zcr" id="iVg-fO-67I"/>
                         <outlet property="passFailLabel" destination="xGE-h3-j3d" id="GqN-aU-Tad"/>

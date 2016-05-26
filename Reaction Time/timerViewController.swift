@@ -61,6 +61,7 @@ class timerViewController: UIViewController {
         falseButton3.enabled = false
         test.enabled = true
     }
+    
     @IBAction func stop(sender: UIButton) {
         timer.invalidate()
         average4 = displayTimer.text!
