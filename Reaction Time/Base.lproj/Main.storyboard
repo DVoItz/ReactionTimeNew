@@ -48,7 +48,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <color key="backgroundColor" red="1" green="0.90668006270000001" blue="0.131158842" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="30"/>
-                                <state key="normal" title="Tap Me To Start, Get Ready!!">
+                                <state key="normal" title="Tap Me To Start">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
