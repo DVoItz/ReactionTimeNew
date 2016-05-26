@@ -50,6 +50,7 @@ class passViewController: UIViewController {
             labelFail.text! = "You're FASTER than the average Reaction Time!!"
             labelFail.textColor = UIColor.yellowColor()
         }
+        
     }
     
 }
