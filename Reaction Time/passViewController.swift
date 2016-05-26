@@ -34,7 +34,7 @@ class passViewController: UIViewController {
         passFailLabel.textColor = UIColor.whiteColor()
         passFailLabel.text! = "\(averageFinal)"
         
-        if averageFinal > 0.60 {
+        if averageFinal > 0.50 {
             passFailLabel2.text! = "YOU FAILED"
             passFailLabel2.textColor = UIColor.redColor()
             passFailImage.image = UIImage(named: "fail")
