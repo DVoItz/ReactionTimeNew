@@ -166,6 +166,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
+                        <outlet property="dullBright" destination="1Bw-P3-teY" id="eQc-cI-PJ9"/>
                         <outlet property="labelFail" destination="Uvk-cl-N5H" id="gIl-Sk-X1J"/>
                         <outlet property="passFailImage" destination="kXM-Mv-Aam" id="9GO-xg-VxH"/>
                         <outlet property="passFailImage2" destination="OLU-kL-Zcr" id="iVg-fO-67I"/>
@@ -233,6 +234,9 @@
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="faze" translatesAutoresizingMaskIntoConstraints="NO" id="jU4-bg-5ZQ">
+                                <rect key="frame" x="351" y="873" width="66" height="43"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -263,6 +267,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="faze" width="500" height="332"/>
         <image name="newBG16" width="400" height="400"/>
         <image name="newBG17" width="400" height="400"/>
         <image name="newBG2" width="432" height="432"/>
