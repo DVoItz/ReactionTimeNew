@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s4h-09-YJb">
-                                <rect key="frame" x="49" y="345" width="173" height="156"/>
+                                <rect key="frame" x="171" y="88" width="173" height="156"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAt-xl-wps">
                                 <rect key="frame" x="0.0" y="-23" width="173" height="110"/>
@@ -30,20 +30,39 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGc-ry-z1X">
-                                <rect key="frame" x="500" y="495" width="177" height="122"/>
+                                <rect key="frame" x="67" y="95" width="177" height="128"/>
                                 <connections>
                                     <action selector="appear2:" destination="ciq-yG-dY8" eventType="touchUpInside" id="GfV-FV-xKT"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CmE-eV-x0i">
-                                <rect key="frame" x="20" y="876" width="162" height="128"/>
+                                <rect key="frame" x="553" y="868" width="162" height="128"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zTw-iH-KJZ">
-                                <rect key="frame" x="500" y="489" width="177" height="128"/>
+                                <rect key="frame" x="67" y="95" width="177" height="128"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FAW-f1-02p">
-                                <rect key="frame" x="564" y="96" width="160" height="128"/>
+                                <rect key="frame" x="304" y="419" width="160" height="128"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PmK-KK-YWy">
+                                <rect key="frame" x="553" y="868" width="162" height="128"/>
+                                <connections>
+                                    <action selector="appear1:" destination="ciq-yG-dY8" eventType="touchUpInside" id="ecc-Cf-Fir"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbj-4y-Y94">
+                                <rect key="frame" x="304" y="419" width="160" height="128"/>
+                                <connections>
+                                    <action selector="appear3:" destination="ciq-yG-dY8" eventType="touchUpInside" id="As2-Rn-hmq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEQ-a9-dlP">
+                                <rect key="frame" x="171" y="88" width="173" height="156"/>
+                                <connections>
+                                    <action selector="stop:" destination="ciq-yG-dY8" eventType="touchUpInside" id="qTs-2l-INQ"/>
+                                    <segue destination="W5e-NX-roy" kind="presentation" modalTransitionStyle="flipHorizontal" id="9mh-BI-5yL"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zx-Ei-vcQ">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <color key="backgroundColor" red="1" green="0.90668006270000001" blue="0.131158842" alpha="1" colorSpace="calibratedRGB"/>
@@ -54,25 +73,6 @@
                                 <connections>
                                     <action selector="fadeAway:" destination="ciq-yG-dY8" eventType="touchDown" id="Sz6-By-eSx"/>
                                     <action selector="start:" destination="ciq-yG-dY8" eventType="touchUpInside" id="Z5b-Sl-kiO"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PmK-KK-YWy">
-                                <rect key="frame" x="20" y="876" width="162" height="128"/>
-                                <connections>
-                                    <action selector="appear1:" destination="ciq-yG-dY8" eventType="touchUpInside" id="ecc-Cf-Fir"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbj-4y-Y94">
-                                <rect key="frame" x="564" y="96" width="160" height="128"/>
-                                <connections>
-                                    <action selector="appear3:" destination="ciq-yG-dY8" eventType="touchUpInside" id="As2-Rn-hmq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEQ-a9-dlP">
-                                <rect key="frame" x="49" y="345" width="173" height="156"/>
-                                <connections>
-                                    <action selector="stop:" destination="ciq-yG-dY8" eventType="touchUpInside" id="qTs-2l-INQ"/>
-                                    <segue destination="W5e-NX-roy" kind="presentation" modalTransitionStyle="flipHorizontal" id="9mh-BI-5yL"/>
                                 </connections>
                             </button>
                         </subviews>
