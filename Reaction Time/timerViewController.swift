@@ -34,7 +34,7 @@ class timerViewController: UIViewController {
         falseButton1.enabled = false
         falseButton2.enabled = false
         falseButton3.enabled = false
-       test.enabled = false
+        test.enabled = false
         
     }
     
@@ -68,7 +68,7 @@ class timerViewController: UIViewController {
         
     }
     @IBAction func start(sender: UIButton) {
-            if (!timer.valid) {
+        if (!timer.valid) {
             let test:Selector = "updateTime"
             timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: test, userInfo: nil, repeats: true)
             go = NSDate.timeIntervalSinceReferenceDate()
